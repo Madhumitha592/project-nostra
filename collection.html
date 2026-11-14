@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections</title>
+<link rel="stylesheet" href="style.css">
+
+     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <!----Section 1---->
+    <section  id="signup" class="signup text-white p-3 bg-gray-900 ">
+        <p class="font-bold" style="font-size: 21px;">Sign Up and Get 30% OFF for your First Order</p>
+        <button id="close-btn">X</button>
+  </section>
+
+  <!---Section 2--->
+   <nav class="p-3 flex items-center justify-between ">
+    <h1 class="text-4xl  font-bold">Nostra</h1>
+    <ul  class="flex gap-2 font-medium md:gap-5">
+       <li>
+          <a href="index.html" class="hover:underline hover:text-gray-600 text-xs md:text-lg">Home</a>        
+       </li>
+        <li>
+            <a href="index.html"  class="hover:underline hover:text-gray-600  text-xs md:text-lg">New Arrival</a>
+        </li>
+         <li>
+            <a href="index.html"   class="hover:underline hover:text-gray-600  text-xs md:text-lg">Most Wanted</a>
+        </li>
+         <li>
+            <a class="hover:underline hover:text-gray-600  text-xs md:text-lg">Collections</a>
+        </li>
+        <li>
+            <a  href="contact.html"  class="hover:underline hover:text-gray-600  text-xs md:text-lg">Contact Us</a>
+        </li>
+    </ul>
+   </nav>
+   <!---Section 3--->
+   <section class="bg-gray-900 text-white text-center p-10 m-2">
+    <h1 class="text-5xl text-white mb-3 font-bold">All Collections</h1>
+    <p class="text-blue-900 font-bold ">Explore hand-crafted designer shirts made with breathable linens and seasonal palettes.</p>
+
+   </section>
+
+   <!---Section 4-->
+   <div class="text-center ">
+    <input type="text" placeholder="Search Your favourits...." class="p-2 m-3" style="width: 60%; border: solid black 3px; border-radius: 20px;">
+   </div>
+<section class="flex justify-around ">
+   <div class="filter ">
+
+    <h2 class="text-4xl font-bold">Occasion</h2>
+
+    <label class="text-2xl">
+        <input type="checkbox" class="filter-option"
+               value="summer" data-filter="season">
+        Summer
+    </label>
+
+    <label  class="text-2xl">
+        <input type="checkbox" class="filter-option"
+               value="winter" data-filter="season">
+        Winter
+    </label>
+    <label  class="text-2xl">
+        <input type="checkbox" class="filter-option"
+               value="winter" data-filter="season">
+        Party
+    </label>
+
+    <h2 class="text-4xl font-bold">Colours</h2>
+
+    <label  class="text-2xl">
+        <input type="checkbox" class="filter-option"
+               value="green" data-filter="color">
+        Green
+    </label>
+
+    <label  class="text-2xl">
+        <input type="checkbox" class="filter-option"
+               value="black" data-filter="color">
+        Black
+    </label>
+
+    <label  class="text-2xl">
+        <input type="checkbox" class="filter-option"
+               value="blue" data-filter="color">
+        Blue
+    </label>
+    <h2 class="text-4xl font-bold">Arrivals</h2>
+
+    <label  class="text-2xl">
+        <input type="checkbox" class="filter-option"
+               value="green" data-filter="color">
+        New
+    </label>
+
+    <label  class="text-2xl">
+        <input type="checkbox" class="filter-option"
+               value="black" data-filter="color">
+        Old
+    </label>
+
+</div>
+
+<div class="products gap-30 ">
+  
+    <div class="product" data-season="summer"
+         data-color="green">
+        <img src="./images/f1.jpg">
+        <h1 class="font-bold text-2xl">Summer Green Shirt</h1>
+        <p>₹260</p>
+    </div>
+
+    <div class="product" data-season="summer"
+         data-color="black">
+        <img src="./images/f2.jpg">
+        <h1 class="font-bold text-2xl">Black Summer Shirt</h1>
+        <p>₹350</p>
+    </div>
+
+    <div class="product" data-season="party"
+         data-color="blue">
+        <img src="./images/f3.jpg">
+        <h1 class="font-bold text-2xl">Blue Party Shirt</h1>
+        <p>₹450</p>
+    </div>
+  
+    <div class="product" data-season="winter"
+         data-color="blue">
+        <img src="./images/f4.jpg">
+        <h1 class="font-bold text-2xl">Blue Winter Shirt</h1>
+        <p>₹600</p>
+    </div>
+    <div class="product" data-season="summer"
+         data-color="black">
+        <img src="./images/f5.jpg">
+        <h3 class="font-bold text-2xl">Black summer Shirt</h3>
+        <p>₹300</p>
+    </div>
+    <div class="product" data-season="summer"
+         data-color="blue">
+        <img src="./images/f6.jpg">
+        <h3 class="font-bold text-2xl">Blue Summer Shirt</h3>
+        <p>₹480</p>
+    </div>
+    <div class="product" data-season="party"
+         data-color="green">
+        <img src="./images/f7.jpg">
+        <h3 class="font-bold text-2xl">Green Party Shirt</h3>
+        <p>₹380</p>
+    </div>
+    <div class="product" data-season="winter"
+         data-color="blue">
+        <img src="./images/n1.jpg">
+        <h3 class="font-bold text-2xl">Blue Winter Shirt</h3>
+        <p>₹400</p>
+    </div>
+    <div class="product" data-season="summer"
+         data-color="blue">
+        <img src="./images/n2.jpg">
+        <h1 class="font-bold text-2xl">Blue Summer Shirt</h1>
+        <p>₹480</p>
+    </div>
+    <div class="product" data-season="summer"
+         data-color="green">
+        <img src="./images/f1.jpg">
+        <h1 class="font-bold text-2xl">Summer Green Shirt</h1>
+        <p>₹260</p>
+    </div>
+
+    <div class="product" data-season="party"
+         data-color="black">
+        <img src="./images/n3.jpg">
+        <h1 class="font-bold text-2xl">Black Party Shirt</h1>
+        <p>₹350</p>
+    </div>
+    <div class="product" data-season="winter"
+         data-color="blue">
+        <img src="./images/f4.jpg">
+        <h1 class="font-bold text-2xl">Blue Winter Shirt</h1>
+        <p>₹600</p>
+</div>
+</section>
+<!----Section 4-->
+    <section class="text-center">
+          <h1 class="text-4xl font-bold mt-5 text-center">Join our News Letter</h1>
+          <h2 class=" text-2xl">Sign up to receive exclusive discounts, wardrobe advice, and early access to drops.</h2>
+          <input type="text" class="p-2 m-3" style="width: 80%; border: solid black 3px;">
+          <br>
+          <button class="bg-black text-white text-2xl p-4 m-1" style="border-radius: 10px;">Subscribe Here</button>
+        </section>
+
+    <!---Section 5--->
+
+       <section class="bg-gray-900 text-white p-10 flex flex-col gap-3">
+          <h1 class="text-4xl font-bold">Nostra</h1>
+          <h2 class="text-2xl">Redefining contemporary menswear and coastal leisure fashion with premium natural materials, vibrant colors, and effortless silhouettes.</h2>
+           <h2 class="font-bold text-xl">Follow Us </h2>
+           <div class="flex">
+           <p class="hover:text-blue-900 ">Instagram</p> <p class="hover:text-blue-900"> | Facebook</p><p class="hover:text-blue-900"> | YouTube</p>
+           </div>
+           <h2 class="text-2xl font-bold">© 2026 Nostra Fashion Inc. All rights reserved.</h2>
+
+        </section>
+
+     <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+<link rel="stylesheet" href="style.css">
+
+     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <!----Section 1---->
+    <section  id="signup" class="signup text-white p-3 bg-gray-900 ">
+        <p class="font-bold" style="font-size: 21px;">Sign Up and Get 30% OFF for your First Order</p>
+        <button id="close-btn">X</button>
+  </section>
+
+  <!---Section 2--->
+   <nav class="p-3 flex items-center justify-between ">
+    <h1 class="text-4xl  md:text-2xl font-bold">Nostra</h1>
+    <ul  class="flex gap-2 font-medium md:gap-5">
+       <li>
+          <a href="#home" class="hover:underline hover:text-gray-600 text-xs md:text-lg">Home</a>        
+       </li>
+        <li>
+            <a href="#New Arrival"  class="hover:underline hover:text-gray-600  text-xs md:text-lg">New Arrival</a>
+        </li>
+         <li>
+            <a href="#Most Wanted"   class="hover:underline hover:text-gray-600  text-xs md:text-lg">Most Wanted</a>
+        </li>
+         <li>
+            <a href="collection.html" class="hover:underline hover:text-gray-600  text-xs md:text-lg">Collections</a>
+        </li>
+        <li>
+            <a href="contact.html" class="hover:underline hover:text-gray-600  text-xs md:text-lg">Contact Us</a>
+        </li>
+    </ul>
+</nav>
+
+<!----section3-->
+<div class="slider">
+
+    <img id="slider-image" src="images/i1.jpg">
+
+    <div class="slider-content">
+        <h1>Level up your style with our</h1>
+        <h4 class="font-bold text-2xl">Summer Collections</h4>
+        <button class="border border-black bg-white text-black p-4">Shop Now →</button>
+    </div>
+
+    <button class="left-arrow" onclick="prevSlide()">
+        ❮
+    </button>
+
+    <button class="right-arrow" onclick="nextSlide()">
+        ❯
+    </button>
+
+</div>
+
+<!----Section 4---->
+ <section>
+    <h2 class="mt-20 m-5 text-3xl font-bold">Brands</h2>
+    <div id="brand" class="flex justify-around text-gray-600">
+    <div class="hover:text-black ">
+    <img src="./images/brand1.png " class="w-10">
+    <p class="font-bold text-2xl">Behance</p>
+    </div>
+     <div class="hover:text-black">
+    <img src="./images/adidas.png " class="w-10">
+    <p class="font-bold text-2xl">Adidas</p>
+    </div>
+     <div class="hover:text-black">
+    <img src="./images/nike.png " class="w-10">
+    <p class="font-bold text-2xl" >Nike</p>
+    </div>
+     <div class="hover:text-black">
+    <img src="./images/puma.png " class="w-10">
+    <p class="font-bold text-2xl">Puma</p>
+    </div>
+     <div class="hover:text-black">
+    <img src="./images/twitch.png " class="w-10">
+    <p class="font-bold text-2xl">twitch</p>
+    </div>
+    </div>
+ </section>
+
+ <!----Section 5---->
+ <section class="flex justify-between mt-5  items-center text-xs md:text-lg">
+    <pre class="m-3 text-2xl font-bold sm:text-3xl lg:text-5xl">We Provide Best serves
+Customer Experiences</pre>
+    <p class="text-sm font-medium text-black-200 lg:text-xl ">|| We ensure that our customer have the best experience possible.</p>
+ </section>
+
+ <!------Section 6-->
+ <section id="container" class="justify-between">
+    <div class="grid grid-cols-2 lg:grid-cols-4">
+    <div class="border border-white p-2 m-6 bg-gray-100 ">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10">
+  <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+ </svg>
+  <h2 class="font-bold">Original Products</h2>
+  <p>We are committed to ensuring our customers are completely satisfied with their shopping experience.</p>
+</div>
+
+    <div class="border border-white p-2 m-6 bg-gray-100">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10">
+  <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-2.625 6c-.54 0-.828.419-.936.634a1.96 1.96 0 0 0-.189.866c0 .298.059.605.189.866.108.215.395.634.936.634.54 0 .828-.419.936-.634.13-.26.189-.568.189-.866 0-.298-.059-.605-.189-.866-.108-.215-.395-.634-.936-.634Zm4.314.634c.108-.215.395-.634.936-.634.54 0 .828.419.936.634.13.26.189.568.189.866 0 .298-.059.605-.189.866-.108.215-.395.634-.936.634-.54 0-.828-.419-.936-.634a1.96 1.96 0 0 1-.189-.866c0-.298.059-.605.189-.866Zm2.023 6.828a.75.75 0 1 0-1.06-1.06 3.75 3.75 0 0 1-5.304 0 .75.75 0 0 0-1.06 1.06 5.25 5.25 0 0 0 7.424 0Z" clip-rule="evenodd" />
+  </svg>
+   <h2 class="font-bold">Satisfaction Guarantee</h2>
+  <p>We are committed to ensuring our customers are completely satisfied with their shopping experience.</p>
+ </div>
+
+    <div class="border border-white p-2 m-6 bg-gray-100">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42" />
+  </svg>
+  <h2 class="font-bold">New Arrivals Everyday</h2>
+  <p>We are committed to ensuring our customers are completely satisfied with their shopping experience.</p>
+  </div>
+    
+    <div class="border border-white p-2 m-6 bg-gray-100">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+  </svg>
+  <h2 class="font-bold">Fast & Free Shiping</h2>
+  <p>We are committed to ensuring our customers are completely satisfied with their shopping experience.</p>
+  </div>
+    </div>
+ </section>
+ <!----Section 7-->
+ <section id="New Arrival" class="container ">
+    <h1 class="text-4xl font-bold">New Arrivals</h1>
+    <p class="text-gray-800 text-2xl mt-3 ">Discover our latest drops engineered for breezy versatility and high summer aesthetics.</p>
+    <div class="new-arrivals mt-10 ml-20 grid grid-cols-2 lg:grid-cols-4">
+        <div class="card ">
+            <img src="./images/f1.jpg">
+            <button onclick="shop()">Shop Now</button>
+        </div>
+        <div class="card">
+            <img src="./images/f2.jpg">
+            <button onclick="shop()">Shop Now</button>
+        </div>
+        <div class="card">
+            <img src="./images/f3.jpg">
+            <button onclick="shop()">Shop Now</button>
+        </div>
+        <div class="card">
+            <img src="./images/f4.jpg">
+            <button onclick="shop()">Shop Now </button>
+        </div>
+         </div>
+ </section>
+ 
+ <!----Section 8-->
+  <section id="Most Wanted" class="most wanted p-5">
+    <h2 class="font-bold text-3xl mb-5">Most Wanted</h2>
+    <p class="text-gray-800 text-2xl mt-5 ">Discover our latest drops engineered for breezy versatility and high summer aesthetics.</p>
+    <div class="most-wanted flex gap-20 grid grid-cols-2 lg:grid-cols-6 " style="overflow-x: auto;">
+        <div class="card1 ">
+            <img src="./images/f6.jpg">
+            <span>Sale</span>
+        </div>
+        <div class="card1">
+            <img src="./images/f2.jpg">
+            <span>Sale</span>
+        </div>
+        <div class="card1">
+            <img src="./images/f5.jpg">
+            <span>Sale</span>
+        </div>
+        <div class="card1">
+            <img src="./images/f1.jpg">
+            <span>Sale</span>
+        </div>
+        <div class="card1">
+            <img src="./images/n2.jpg">
+            <span>Sale</span>
+        </div>
+        <div class="card1">
+            <img src="./images/f3.jpg">
+            <span>Sale</span>
+        </div>
+    </div>
+  </section>
+
+  <!---section 9---->
+
+  <section class="offers ">
+    <div class="offer-image ">
+        <img src="./images/offer image.jpg">
+  </div>
+  <div class="one " style="margin-right: 20%;">
+    <h1 class="font-bold text-3xl">Limited Offers</h1>
+    <h2 class="text-2xl">35% OFF on this Exclusive  On Curated Summer Weaves</h2>
+    <button>Shop Now</button>
+  </div>
+</section>
+
+<!-----Section 10---->
+
+    <section class="text-center">
+          <h1 class="text-4xl font-bold mt-5 text-center">Join our News Letter</h1>
+          <h2 class=" text-2xl">Signup with email for newspaper to getting extra exclusive discount, and more Updates</h2>
+          <input type="text" class="p-2 m-3" style="width: 80%; border: solid black 3px;">
+          <br>
+          <button class="bg-black text-white text-2xl p-4 m-1" style="border-radius: 10px;">Subscribe Here</button>
+        </section>
+    <!---Section 11--->
+       <section class="bg-gray-900 text-white p-10 flex flex-col gap-3">
+          <h1 class="text-4xl font-bold">Nostra</h1>
+          <h2 class="text-2xl">Redefining contemporary menswear and coastal leisure fashion with premium natural materials, vibrant colors, and effortless silhouettes.</h2>
+           <h2 class="font-bold text-xl">Follow Us </h2>
+           <div class="flex">
+           <p class="hover:text-blue-900 ">Instagram</p> <p class="hover:text-blue-900"> | Facebook</p><p class="hover:text-blue-900"> | YouTube</p>
+           </div>
+           <h2 class="text-2xl font-bold">© 2026 Nostra Fashion Inc. All rights reserved.</h2>
+
+        </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
